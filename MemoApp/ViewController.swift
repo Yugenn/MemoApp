@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         textView.text = sceneDelegate.lastText
     }
     
+    
     func textViewDidChange(_ textView: UITextView) {
         let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
         sceneDelegate.lastText = textView.text
